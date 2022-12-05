@@ -1,67 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-tools:context=".MainActivity"
-android:background="#F2F2FC"
-android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2FC"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
     tools:ignore="ExtraText">
 
     <!--로고-->
     <LinearLayout
-    android:id="@+id/home"
-    android:layout_width="50dp"
-    android:layout_height="50dp"
-    android:background="@drawable/logo3"
-    android:layout_margin="5dp"
-    android:orientation="horizontal">
-
-</LinearLayout>
-
-    <!--이름-->
-    <LinearLayout
-    android:id="@+id/foodname"
-    android:layout_width="match_parent"
-    android:layout_height="150dp"
-    android:orientation="horizontal"
-    android:layout_gravity="center">
-
-    <LinearLayout
-        android:layout_width="100dp"
-        android:layout_height="46dp"
-        android:background="@drawable/foodname"
-        android:layout_marginTop="52dp"
-        android:layout_marginLeft="50dp">
+        android:id="@+id/home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/logo3"
+        android:orientation="horizontal">
 
     </LinearLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
+    <!--이름-->
+    <LinearLayout
+        android:id="@+id/foodname"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="50dp"
-            android:background="#ffffff"
-            android:hint="이름 입력"
-            android:minHeight="48dp" />
-    </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/foodname">
 
-</LinearLayout>
+        </LinearLayout>
 
-    //NumberPicker 사용
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="50dp"
+                android:background="#ffffff"
+                android:hint="이름 입력"
+                android:minHeight="48dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
     <!--유통기한-->
     <LinearLayout
         android:id="@+id/expirationdate"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="100dp"
@@ -127,142 +125,142 @@ android:orientation="vertical"
 
     <!--입고날짜-->
     <LinearLayout
-    android:id="@+id/receiptdate"
-    android:layout_width="match_parent"
-    android:layout_height="80dp"
-    android:orientation="horizontal"
-        android:gravity="center">
+        android:id="@+id/receiptdate"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="100dp"
-        android:layout_height="46dp"
-        android:background="@drawable/receiptdate"
-        android:layout_gravity="center"
-        android:layout_marginLeft="15dp">
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/receiptdate">
+
+        </LinearLayout>
+
+        <NumberPicker
+            android:id="@+id/receiptdateyearPicker"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="년"
+            android:textSize="18dp" />
+
+        <NumberPicker
+            android:id="@+id/receiptdatemonthPicker"
+            android:layout_width="43dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="7dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="월"
+            android:textSize="18dp" />
+
+        <NumberPicker
+            android:id="@+id/receiptdatedatePicker"
+            android:layout_width="43dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="7dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="일"
+            android:textSize="18dp" />
 
     </LinearLayout>
-
-    <NumberPicker
-        android:id="@+id/receiptdateyearPicker"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:calendarViewShown="false"
-        android:datePickerMode="spinner"
-        android:layout_gravity="center"
-        android:layout_marginLeft="20dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="년"
-        android:textSize="18dp"
-        android:layout_gravity="center"
-        android:layout_margin="5dp"/>
-
-    <NumberPicker
-        android:id="@+id/receiptdatemonthPicker"
-        android:layout_width="43dp"
-        android:layout_height="60dp"
-        android:calendarViewShown="false"
-        android:datePickerMode="spinner"
-        android:layout_gravity="center"
-        android:layout_marginLeft="7dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="월"
-        android:textSize="18dp"
-        android:layout_gravity="center"
-        android:layout_margin="5dp"/>
-
-    <NumberPicker
-        android:id="@+id/receiptdatedatePicker"
-        android:layout_width="43dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="7dp"
-        android:calendarViewShown="false"
-        android:datePickerMode="spinner" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="일"
-        android:textSize="18dp"
-        android:layout_gravity="center"
-        android:layout_margin="5dp"/>
-
-</LinearLayout>
 
     <!--보관장소-->
     <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="130dp"
-    android:orientation="horizontal">
-
-    <LinearLayout
-        android:layout_width="100dp"
-        android:layout_height="46dp"
-        android:background="@drawable/place"
-        android:layout_gravity="center"
-        android:layout_marginLeft="43dp">
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginRight="20dp"
-        android:padding="10dp">
+        android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/refrigerationButton"
-            android:layout_width="54dp"
-            android:layout_height="50dp"
-            android:layout_margin="12dp"
-            android:background="@drawable/coldoff"
-            android:contentDescription="@string/app_name" />
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="43dp"
+            android:background="@drawable/place">
 
-        <ImageButton
-            android:id="@+id/frozenButton"
-            android:layout_width="54dp"
-            android:layout_height="50dp"
-            android:layout_margin="12dp"
-            android:background="@drawable/frozenoff"
-            android:contentDescription="@string/app_name" />
+        </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/roomtemperatureButton"
-            android:layout_width="54dp"
-            android:layout_height="50dp"
-            android:layout_margin="12dp"
-            android:background="@drawable/roomtemperatureoff"
-            android:contentDescription="@string/app_name" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/refrigerationButton"
+                android:layout_width="54dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:background="@drawable/coldoff"
+                android:contentDescription="@string/app_name" />
+
+            <ImageButton
+                android:id="@+id/frozenButton"
+                android:layout_width="54dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:background="@drawable/frozenoff"
+                android:contentDescription="@string/app_name" />
+
+            <ImageButton
+                android:id="@+id/roomtemperatureButton"
+                android:layout_width="54dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:background="@drawable/roomtemperatureoff"
+                android:contentDescription="@string/app_name" />
+
+
+        </LinearLayout>
 
 
     </LinearLayout>
-
-
-</LinearLayout>
 
     <!--재료 추가하기-->
     <LinearLayout
-    android:layout_width="match_parent"
-    android:gravity="center"
-    android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
 
-    <ImageButton
-        android:id="@+id/addfoodButton"
-        android:layout_width="200dp"
-        android:layout_height="48dp"
-        android:layout_margin="20dp"
-        android:background="@drawable/addfoobutton"
-        android:contentDescription="@string/app_name">
+        <ImageButton
+            android:id="@+id/addfoodButton"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/addfoobutton"
+            android:contentDescription="@string/app_name">
 
-    </ImageButton>
+        </ImageButton>
 
-</LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
