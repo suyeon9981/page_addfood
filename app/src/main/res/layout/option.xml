@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2FC"
+    android:orientation="vertical">
+
+    <!-- 로고 -->
+    <LinearLayout
+        android:id="@+id/home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/logo3"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <!--알림-->
+    <LinearLayout
+        android:id="@+id/font_size"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/allim">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!--푸시알림기준-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:background="@drawable/rectangle"
+                android:layout_margin="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bMJUA_ttf"
+                    android:text="푸시알림 기준 (남은 유통기한)"
+                    android:textColor="@color/black"
+                    android:padding="5dp">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/day1off"
+                        android:contentDescription="@string/app_name">
+
+                    </ImageButton>
+
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/day3off"
+                        android:contentDescription="@string/app_name"></ImageButton>
+
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/day5off"
+                        android:contentDescription="@string/app_name">
+
+                    </ImageButton>
+
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/week1off"
+                        android:contentDescription="@string/app_name">
+
+                    </ImageButton>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--푸시알림on/off-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rectangle"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bMJUA_ttf"
+                    android:text="푸시알림 on/off"
+                    android:textColor="@color/black"
+                    android:padding="5dp">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/onoff"
+                        android:contentDescription="@string/app_name" />
+
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/offoff"
+                        android:contentDescription="@string/app_name" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--도움말-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/help">
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="270dp"
+            android:layout_height="48dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/helpbutton"
+            android:contentDescription="@string/app_name" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
