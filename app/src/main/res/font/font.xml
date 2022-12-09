@@ -3,7 +3,7 @@
 
     <font android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/bMJUA_ttf">
+        android:font="@font/bmjua_ttf">
 
     </font>
 </font-family>

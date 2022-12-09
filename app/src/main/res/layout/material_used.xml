@@ -36,19 +36,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="재료이름"
-            android:fontFamily="@font/bMJUA_ttf"
+            android:fontFamily="@font/bmjua_ttf"
             android:textColor="@color/black"/>
         <TextView
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/bMJUA_ttf"
+            android:fontFamily="@font/bmjua_ttf"
             android:text="유통기한:"/>
         <TextView
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/bMJUA_ttf"
+            android:fontFamily="@font/bmjua_ttf"
             android:text="입고날짜:"/>
     </LinearLayout>
 

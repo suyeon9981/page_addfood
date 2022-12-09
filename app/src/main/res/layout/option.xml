@@ -51,7 +51,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/bMJUA_ttf"
+                    android:fontFamily="@font/bmjua_ttf"
                     android:text="푸시알림 기준 (남은 유통기한)"
                     android:textColor="@color/black"
                     android:padding="5dp">
@@ -111,7 +111,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/bMJUA_ttf"
+                    android:fontFamily="@font/bmjua_ttf"
                     android:text="푸시알림 on/off"
                     android:textColor="@color/black"
                     android:padding="5dp">
